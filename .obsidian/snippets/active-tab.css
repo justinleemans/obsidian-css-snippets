@@ -1,0 +1,10 @@
+/* Style the active note tab */
+.workspace-tab-header.is-active {
+    border-top: 3px solid var(--interactive-accent) !important;
+    background-color: var(--background-primary) !important;
+}
+
+/* Dim inactive tabs slightly for contrast */
+.workspace-tab-header:not(.is-active) {
+    opacity: 0.6;
+}

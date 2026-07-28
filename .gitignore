@@ -1,0 +1,15 @@
+# Ignore everything by default
+*
+
+# Keep the repo metadata and README
+!.gitignore
+!README.md
+
+# Ignore markdown files except README
+*.md
+!README.md
+
+# Allow CSS files in Obsidian snippets
+!.obsidian/
+!.obsidian/snippets/
+!.obsidian/snippets/**/*.css

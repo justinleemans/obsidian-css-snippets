@@ -1,0 +1,10 @@
+.metadata-container {
+    border: 1px solid var(--interactive-accent);
+    padding: 1em 1em 0.5em 2em;
+    border-radius: 5px;
+    background: hsla(var(--interactive-accent-hsl), 0.15);
+}
+
+.metadata-properties-title {
+    color: var(--interactive-accent);
+}

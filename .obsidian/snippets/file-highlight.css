@@ -1,0 +1,11 @@
+.nav-file-title[data-path^="_"],
+.nav-file-title[data-path*="/_"] {
+	background-color: hsla(var(--interactive-accent-hsl), 0.15);
+	border-radius: var(--radius-s);
+}
+
+.nav-file-title[data-path^="_"] .nav-file-title-content,
+.nav-file-title[data-path*="/_"] .nav-file-title-content {
+	color: var(--interactive-accent);
+	font-weight: 700;
+}

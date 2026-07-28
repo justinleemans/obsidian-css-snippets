@@ -1,0 +1,52 @@
+:root {
+    /* Warm Red/Brown */
+    --indent-color-1: rgba(255, 120, 120, 0.2);
+    /* Gold/Yellow */
+    --indent-color-2: rgba(255, 200, 120, 0.2);
+    /* Blue/Slate */
+    --indent-color-3: rgba(120, 180, 255, 0.2);
+    /* Purple */
+    --indent-color-4: rgba(180, 140, 255, 0.2);
+}
+
+/* Indentation in edit mode */
+.cm-indent:nth-child(4n+1) {
+    background-color: var(--indent-color-1);
+}
+
+.cm-indent:nth-child(4n+2) {
+    background-color: var(--indent-color-2);
+}
+
+.cm-indent:nth-child(4n+3) {
+    background-color: var(--indent-color-3);
+}
+
+.cm-indent:nth-child(4n) {
+    background-color: var(--indent-color-4);
+}
+
+/* Indentation in live preview */
+.cm-line .cm-indent-guide:nth-child(4n+1),
+.markdown-rendered pre code .indent-guide:nth-child(4n+1) {
+    background-color: var(--indent-color-1) !important;
+    border-left: none !important;
+}
+
+.cm-line .cm-indent-guide:nth-child(4n+2),
+.markdown-rendered pre code .indent-guide:nth-child(4n+2) {
+    background-color: var(--indent-color-2) !important;
+    border-left: none !important;
+}
+
+.cm-line .cm-indent-guide:nth-child(4n+3),
+.markdown-rendered pre code .indent-guide:nth-child(4n+3) {
+    background-color: var(--indent-color-3) !important;
+    border-left: none !important;
+}
+
+.cm-line .cm-indent-guide:nth-child(4n),
+.markdown-rendered pre code .indent-guide:nth-child(4n) {
+    background-color: var(--indent-color-4) !important;
+    border-left: none !important;
+}

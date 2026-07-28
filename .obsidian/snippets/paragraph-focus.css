@@ -1,0 +1,16 @@
+/* Idle */
+.cm-content>.cm-line {
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+/* Line active */
+.cm-content>.cm-line.cm-activeLine,
+.cm-content>.cm-line.cm-active {
+    opacity: 1 !important;
+}
+
+/* Line hover */
+.cm-content>.cm-line:hover {
+    opacity: 0.8;
+}
