@@ -6,7 +6,8 @@ My personal collection of css snippets for customizing my Obsidian editor
 
 - [Setup](#setup)
 - [Snippets](#snippets)
-    - [Active Tab](#active-tab)
+    - [Active tab](#active-tab)
+    - [File blur](#file-blur)
     - [File highlight](#file-highlight)
     - [Image hover](#image-hover)
     - [Paragraph focus](#paragraph-focus)
@@ -24,6 +25,10 @@ Below is a list of the included snippets and what they do:
 - ### Active tab
 
     Adds small highlight to the selected/active tab
+
+- ### File blur
+
+    Blurs file and folder names starting with b_
 
 - ### File highlight
 

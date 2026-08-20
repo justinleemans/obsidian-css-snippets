@@ -1,0 +1,20 @@
+/* 1. Blur text for private files/folders ONLY when NOT hovered AND NOT actively being edited */
+.nav-file:has([data-path*="/b_"]):not(:hover):not(:has([contenteditable="true"])):not(.is-being-renamed) .nav-file-title-content,
+.nav-file:has([data-path^="b_"]):not(:hover):not(:has([contenteditable="true"])):not(.is-being-renamed) .nav-file-title-content,
+.nav-folder:has([data-path*="/b_"]):not(:hover):not(:has([contenteditable="true"])):not(.is-being-renamed) .nav-folder-title-content,
+.nav-folder:has([data-path^="b_"]):not(:hover):not(:has([contenteditable="true"])):not(.is-being-renamed) .nav-folder-title-content {
+    filter: blur(5px);
+    user-select: none;
+    transition: filter 0.2s ease;
+}
+
+/* 2. FORCE blur off while editing/typing in the sidebar (regardless of mouse location) */
+.nav-file:has([contenteditable="true"]) .nav-file-title-content,
+.nav-folder:has([contenteditable="true"]) .nav-folder-title-content,
+.nav-file.is-being-renamed .nav-file-title-content,
+.nav-folder.is-being-renamed .nav-folder-title-content,
+.nav-file-title [contenteditable="true"],
+.nav-folder-title [contenteditable="true"] {
+    filter: none !important;
+    user-select: text !important;
+}
